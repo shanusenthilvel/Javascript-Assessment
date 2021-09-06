@@ -1,1 +1,1 @@
-#  SHanmugi Javascript-Assessment 
+#  Shanmugi Javascript-Assessment 
