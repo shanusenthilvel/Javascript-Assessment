@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <script>
+        var subcategory = {
+            TamilNadu: ["Chennai","Vellore","Kanchipuram"],
+	    Maharashtra : ["Mumbai","Pune","Nagpur"]        
+	}
+
+        function makeSubmenu(value) {
+                var citiesOptions = "";
+                for (categoryId in subcategory[value]) {
+                    citiesOptions += "<option>" + subcategory[value][categoryId] + "</option>";
+                }
+                document.getElementById("categorySelect").innerHTML = citiesOptions;
+        }
+
+        
+    </script>
+</head>
+<body>
+    <select id="category" size="1" onchange="makeSubmenu(this.value)">
+<option value="" disabled selected>Choose Category</option>
+<option>TamilNadu</option>
+<option>Maharashtra</option>
+</select>
+    <select id="categorySelect">
+<option value="" disabled selected>Choose Subcategory</option>
+<option></option>
+</select>
+   
+</body>
+</html>
