@@ -1,0 +1,6 @@
+function mergeArray()
+{
+const arr=["India","Japan","Korea","China"];
+const arr1= ["Malaysia","Thailand"];
+console.log(arr.concat(arr1));
+}
