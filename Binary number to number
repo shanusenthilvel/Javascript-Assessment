@@ -1,0 +1,5 @@
+function myfunc()
+{
+var num1 = "10010101";
+num2 = parseInt(num1);
+}
