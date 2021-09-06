@@ -1,0 +1,8 @@
+const materials = [ 'Hydrogen', 'Helium', 'Lithium', 'Beryllium'];
+function checkLength(value)
+{
+return value.lenght
+const arr = materials.map(checkLength);
+console.log(arr);
+}
+
