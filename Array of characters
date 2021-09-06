@@ -1,0 +1,4 @@
+function stringSplit(){
+var str ="Shanmugi";
+console.log(str.split(""));
+}
