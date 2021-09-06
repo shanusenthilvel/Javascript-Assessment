@@ -8,8 +8,11 @@
 	}
 
         function makeSubmenu(value) {
+		if (value.length == 0) document.getElementById("categorySelect").innerHTML = "<option></option>";
+            else {
                 var citiesOptions = "";
                 for (categoryId in subcategory[value]) {
+		
                     citiesOptions += "<option>" + subcategory[value][categoryId] + "</option>";
                 }
                 document.getElementById("categorySelect").innerHTML = citiesOptions;
